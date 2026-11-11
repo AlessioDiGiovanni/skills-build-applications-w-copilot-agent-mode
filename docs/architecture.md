@@ -50,7 +50,12 @@ Record your plan here before editing code.
 Record the commands you run and what each failure means.
 
 - Data-tier command: `npm run test:data --prefix octofit-tracker/backend`
+    Currently 4 failures out of 5; it points out missing constraints in the User, Team, Activity, and Workout schemas. The seed test passes.
 - API command: `npm run test:api --prefix octofit-tracker/backend`
+    Currently 4 failures out of 4; check validation and creation, leaderboard, and suggestions.
 - Frontend command: `npm test --prefix octofit-tracker/frontend`
+    currently 15 failures; check rendering of views and API state management.
 - Backend build command: `npm run build --prefix octofit-tracker/backend`
+    detects backend TypeScript errors.
 - Frontend build command: `npm run build --prefix octofit-tracker/frontend`
+    detects TypeScript or Vite compilation errors.
